@@ -13,6 +13,9 @@ hall = input("Enter your hall of residence: ")
 name_part = full_name[:3].lower()
 student_email = name_part + student_id + "@st.ug.edu.gh"
 
+#Build contact line using string concatenation
+contact_line = "Reach " + full_name + " (" + programme + ") at " + student_email + " ," + hall
+
 # Build the border using string concatenation
 border_part = "=========="
 border = border_part + border_part + border_part + border_part + border_part
@@ -32,6 +35,7 @@ print("Level              : " + level)
 print("Age                : " + age)
 print("Hall               : " + hall)
 print("Generated Email    : " + student_email)
+print("Contact Line       : " + contact_line)
 print()
 print(border)
 print("              UNIVERSITY OF GHANA")
